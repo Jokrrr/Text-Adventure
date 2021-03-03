@@ -44,7 +44,7 @@ def IsleCitadel():
     print(castleAscii)
     print("The citadel towers over you, the lair of the evil Lord Necronis")
     print("""
-    A local man approaches you
+    A man from a local town approaches you
     Hello adventurer! What is your name?""")
     charNameGen()
     charNameVar = charNameGen.charName # assigns the member to charNameVar under the function 
@@ -52,9 +52,38 @@ def IsleCitadel():
     closeCheck()
     
 def townThornwall():
+    townAscii = r""" 
+    ~         ~~          __
+       _T      .,,.    ~--~ ^^
+ ^^   // \                    ~
+      ][O]    ^^      ,-~ ~
+   /''-I_I         _II____
+__/_  /   \ ______/ ''   /'\_,__
+  | II--'''' \,--:--..,_/,.-{ },
+; '/__\,.--';|   |[] .-.| O{ _ }
+:' |  | []  -|   ''--:.;[,.'\,/
+'  |[]|,.--'' '',   ''-,.    |
+  ..    ..-''    ;       ''. '"""
+    print(townAscii)
+    print("""
+    The quaint town of Thornwall lays straight ahead
+    A man with a book is waiting outside the town
+    As you approach he demands your name with his quil at the ready
+    """)
     charNameGen()
     charNameVar = charNameGen.charName # assigns the member to charNameVar under the function
-    print("Welcome to the quaint town of Thornwall", charNameVar )
+    print("Welcome to our quaint little town", charNameVar, "I am the towns clerk I keep notes of all who pass through\n" )
+    townSign = r"""
+  _______ _                                   _ _ 
+ |__   __| |                                 | | |
+    | |  | |__   ___  _ __ _ ____      ____ _| | |
+    | |  | '_ \ / _ \| '__| '_ \ \ /\ / / _` | | |
+    | |  | | | | (_) | |  | | | \ V  V / (_| | | |
+    |_|  |_| |_|\___/|_|  |_| |_|\_/\_/ \__,_|_|_|
+                                                  
+                                                  """
+    print("A Large sign behind the man in inscribed with the towns name")
+    print(townSign)
     closeCheck()
 
 def adventureStart():
